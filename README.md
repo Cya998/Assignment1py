@@ -3,46 +3,46 @@ while True:
 
     try:
         
-	num1=float(input("Enter the first number:"))
+	    num1=float(input("Enter the first number:"))
        
-	num2=float(input("Enter the second number:"))
+	    num2=float(input("Enter the second number:"))
     
     except ValueError:
         
-	print("Invalid input.Please enter numbers only.")
+	    print("Invalid input.Please enter numbers only.")
         
-	continue
+	    continue
   
     while True:
         
-	operation=input("Enter the operation(+,-,*,/):")
+	    operation=input("Enter the operation(+,-,*,/):")
      
-	if operation=="back":
+	    if operation = ="back":
            
-	    break
+	        break
         
-	if operation == '+':
+	    if operation == '+':
            
-	    result = num1 + num2
+	        result = num1 + num2
         
-	elif operation == '-':
+	    elif operation == '-':
            
-	    result = num1 - num2
+	        result = num1 - num2
         
-	elif operation == '*':
+	    elif operation == '*':
            
-	    result = num1 * num2
+                result = num1 * num2
       
-	elif operation == '/':
+	    elif operation == '/':
            
-	    if num2 == 0:
+	        if num2 == 0:
                
-		print("Error!")
+		    print("Error!")
                
-		continue
-            result = num1 /num2
-        else:
-	        print("Invalid operation!Please try again.")
-	        continue
-        print("Result:",result)
-        break
+		    continue
+                result = num1 /num2
+            else:
+	            print("Invalid operation!Please try again.")
+	            continue
+            print("Result:",result)
+            break
